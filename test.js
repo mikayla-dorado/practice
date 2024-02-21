@@ -1,6 +1,6 @@
 //practice for technical interviews
 
-//? return the sum of 2 numbers
+// //? return the sum of 2 numbers
 const addition = (a, b) => {
     let sum = a + b
     return sum
@@ -27,3 +27,79 @@ console.log(indexOf)// returns the number of the spot the "Football" is in the a
 
 const slice = sports.slice(1);
 console.log(slice); // this removes the first item in the array, making a new array with these items "Soccer", "Football", "Softball"
+
+//? function that checks if a number is less thatn 100
+const Check = (x) => {
+    x > 100 ? console.log('Greater') : console.log("Less than")
+}
+console.log(Check(13))
+
+
+//? FIZZBUZZ CHALLENGE
+// Write a program that prints the numbers 1 - 100. for multiples of 3, print the word 'Fizz' instead of the number,
+// for multiples of 5, print the word 'Buzz', for multiples of both 3 and 5, print 'FizzBuzz'
+
+//this initializes 'i' to 1 and iterates as long as 'i' is <= 100. it increments by 1 in ach iteration
+for (let i = 1; i <= 100; i += 1) {
+    //checks if 'i' is divisible by 3 and 5
+    if (i % 3 === 0 && i % 5 === 0) {
+        console.log('FizzBuzz')
+    }
+    //checks if only divisible by 3
+    else if (i % 3 === 0) {
+        console.log('Fizz')
+    }
+    //checks if only divisible by 5
+    else if (i % 5 === 0) {
+        console.log('Buzz')
+        //if none of the above conditions are met, print current value of 'i'
+    } else {
+        console.log(i)
+    }
+}
+
+//? Make a counter
+//?Set up in HTML first, apply logic here
+let count = 0;
+function updateDisplay () {
+    document.getElementById("countDisplay").textContent = count;
+}
+
+function increment() {
+    count++
+    updateDisplay()
+}
+
+function decrement() {
+    if (count > 0) {
+        count--
+        updateDisplay()
+    }
+}
+
+function reset() {
+    count = 0
+    updateDisplay()
+}
+
+updateDisplay()
+
+
+
+
+
+
+// //! NEED TO MAKE A REACT PRACTICE FOLDER
+// //?React counter using useState
+
+// const Counter = () => {
+//     const [count, setCount] = useState(0)
+
+//     return (
+//         <div>
+//             <h1>Count: {count}</h1>
+//             <button onClick={() => setCount(count + 1)}>Increment Count</button>
+//             <button onClick={() => setCount(count - 1)}>Decrement Count</button>
+//         </div>
+//     )
+// } 

@@ -5,7 +5,7 @@ const addition = (a, b) => {
     let sum = a + b
     return sum
 }
-console.log(addition(4,4))
+console.log(addition(4, 4))
 
 // //? convert minutes to seconds
 const minToSec = (x) => {
@@ -22,7 +22,7 @@ console.log(length) // returns 3 since there is 3 items in the array
 sports.push("Softball")
 console.log(length) // returns 4 since we added an item to the array
 
-indexOf = sports.indexOf("Football") 
+indexOf = sports.indexOf("Football")
 console.log(indexOf)// returns the number of the spot the "Football" is in the array, it's 2 because "Football is at index 2"
 
 const slice = sports.slice(1);
@@ -40,49 +40,49 @@ console.log(Check(13))
 // for multiples of 5, print the word 'Buzz', for multiples of both 3 and 5, print 'FizzBuzz'
 
 //this initializes 'i' to 1 and iterates as long as 'i' is <= 100. it increments by 1 in ach iteration
-for (let i = 1; i <= 100; i += 1) {
-    //checks if 'i' is divisible by 3 and 5
-    if (i % 3 === 0 && i % 5 === 0) {
-        console.log('FizzBuzz')
-    }
-    //checks if only divisible by 3
-    else if (i % 3 === 0) {
-        console.log('Fizz')
-    }
-    //checks if only divisible by 5
-    else if (i % 5 === 0) {
-        console.log('Buzz')
-        //if none of the above conditions are met, print current value of 'i'
-    } else {
-        console.log(i)
-    }
-}
+// for (let i = 1; i <= 100; i += 1) {
+//     //checks if 'i' is divisible by 3 and 5
+//     if (i % 3 === 0 && i % 5 === 0) {
+//         console.log('FizzBuzz')
+//     }
+//     //checks if only divisible by 3
+//     else if (i % 3 === 0) {
+//         console.log('Fizz')
+//     }
+//     //checks if only divisible by 5
+//     else if (i % 5 === 0) {
+//         console.log('Buzz')
+//         //if none of the above conditions are met, print current value of 'i'
+//     } else {
+//         console.log(i)
+//     }
+// }
 
 //? Make a counter
 //?Set up in HTML first, apply logic here
-let count = 0;
-function updateDisplay () {
-    document.getElementById("countDisplay").textContent = count;
-}
+// let count = 0;
+// function updateDisplay () {
+//     document.getElementById("countDisplay").textContent = count;
+// }
 
-function increment() {
-    count++
-    updateDisplay()
-}
+// function increment() {
+//     count++
+//     updateDisplay()
+// }
 
-function decrement() {
-    if (count > 0) {
-        count--
-        updateDisplay()
-    }
-}
+// function decrement() {
+//     if (count > 0) {
+//         count--
+//         updateDisplay()
+//     }
+// }
 
-function reset() {
-    count = 0
-    updateDisplay()
-}
+// function reset() {
+//     count = 0
+//     updateDisplay()
+// }
 
-updateDisplay()
+// updateDisplay()
 
 
 
@@ -103,3 +103,42 @@ updateDisplay()
 //         </div>
 //     )
 // } 
+
+for (let i = 1; i <= 100; i += 1) {
+    if (i % 3 === 0 && i % 5 === 0) {
+        console.log("FizzBuzz")
+    } else if (i % 3 === 0) {
+        console.log("Fizz")
+    } else if (i % 5 === 0) {
+        console.log("Buzz")
+    } else {
+        console.log(i)
+    }
+}
+
+//? this version is incorrect, the order of the if statements matter
+//?the third condition will never be reached because 'i % 3 === 0' was already met in the first condition, so it will skip 'FizzBuzz' and only print 'Fizz'
+// for (let i = 1; i <= 100; i += 1) {
+//     if ( i % 3 === 0) {
+//         console.log("Fizz") 
+//     } else if (i % 5 === 0) {
+//         console.log("Buzz")
+//     } else if (i % 3 === 0 && i % 5 === 0) {
+//         console.log("FizzBuzz")
+//     } else {
+//         console.log(i)
+//     }
+// }
+
+
+
+//?interview questions
+
+//! What are your strengths?
+//I'm not afraid to ask questions or get help, I am genuinly interested in contributing to a team and being an asset for my company.
+//I work well with a team, and I am also a natural leader.
+//Time management, I hate being late and I love meeting a deadline.
+
+//! What are you weaknesses?
+//Public speaking can give me anxiety, but once I get comfortable with people I feel more confident
+//I can allow imposter syndrome to take over and affect me mentally, but only for a short amount of time. 

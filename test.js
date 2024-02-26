@@ -142,3 +142,7 @@ for (let i = 1; i <= 100; i += 1) {
 //! What are you weaknesses?
 //Public speaking can give me anxiety, but once I get comfortable with people I feel more confident
 //I can allow imposter syndrome to take over and affect me mentally, but only for a short amount of time. 
+
+//! Git commands
+//asked basic Git command questions
+

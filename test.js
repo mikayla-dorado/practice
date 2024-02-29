@@ -148,3 +148,7 @@ for (let i = 1; i <= 100; i += 1) {
 
 //! Walk through code
 // showed him my site and then walked through & explained my code
+
+//! Confidence!
+// don't say 'this is just a simple application'
+// don't sell yourself short

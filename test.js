@@ -117,6 +117,23 @@ console.log(Check(13))
 // }
 
 
+//! this was asked of me in an application 
+// What Javascript statement in place of "?" will make the result always be between 6 and 7? 
+// const x = 2; let y = 4; function update(arg) { 
+// return Math.random() + y * arg; } y = 2; ?; const result = update(x);
+
+//? the answer chatgpt gave me is
+// const x = 2;
+// let y = 4;
+
+// function update(arg) {
+//   return Math.random() + y * arg;
+// }
+
+// y = 2 + Math.random(); // Add a random value between 0 and 1 to y
+// const result = update(x);
+
+
 
 //?interview questions
 

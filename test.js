@@ -134,6 +134,15 @@ console.log(Check(13))
 // const result = update(x);
 
 
+//! a SQL query to get the amount of flavors sold in march of this year
+
+// SELECT flavor, COUNT (*) AS count_batches
+// FROM batch
+// WHERE EXTRACT(YEAR FROM run_date) = EXTRACT(YEAR FROM CURRENT_DATE)
+// AND EXTRACT (MONTH FROM run_date) = 3
+// GROUP BY flavor;
+
+
 
 //?interview questions
 
